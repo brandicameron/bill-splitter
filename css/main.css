@@ -99,6 +99,10 @@ button {
   margin-bottom: 3px;
 }
 
+.tip-output {
+  letter-spacing: -0.05rem;
+}
+
 .results {
   position: fixed;
   width: 100vw;
