@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Bill Splitter</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Brandi Cameron | hello@brandicameron.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="manifest" href="site.webmanifest" />
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#603cba" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta property="og:title" content="Split the Check!" />
+    <meta
+      property="og:image"
+      content="https://bc-portfolio.s3.amazonaws.com/fbs-billsplit.jpg"
+    />
+  </head>
+
+  <body>
+    <header>
+      <img src="./img/logo.svg" alt="Check Splitter Logo" class="logo" />
+    </header>
+
+    <form class="calculator">
+      <label for="bill" aria-label="Enter Amount of Bill"></label>
+      <input type="text" name="bill" id="bill" placeholder="Bill Amount" />
+      <div class="btn-container">
+        <button class="tip-decrement">&#8212;</button>
+        <div class="output"><span class="tip-output">25</span>%</div>
+        <button class="tip-increment">&#43;</button>
+      </div>
+      <div class="btn-container">
+        <button class="person-decrement">&#8212;</button>
+        <div class="output person-output">2</div>
+        <button class="person-increment">&#43;</button>
+      </div>
+    </form>
+
+    <div class="results">
+      <div class="total">
+        <div>
+          <span class="light">Total Tip:</span> $<span class="total-tip"
+            >0.00</span
+          >
+        </div>
+        <div>
+          <span class="light">Total Bill:</span> $<span class="total-bill"
+            >0.00</span
+          >
+        </div>
+      </div>
+      <div class="per-person">
+        <div>
+          <span class="light">Tip Per Person:</span> $<span class="person-tip"
+            >0.00</span
+          >
+        </div>
+        <div class="highlight">
+          <span class="light">Total Per Person:</span> $<span
+            class="person-bill"
+            >0.00</span
+          >
+        </div>
+      </div>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

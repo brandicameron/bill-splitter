@@ -1,0 +1,122 @@
+:root {
+  --accent-color: #0084ff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  min-height: 100vh;
+  font-family: "Roboto", sans-serif;
+}
+
+.logo {
+  display: flex;
+  width: 50px;
+  margin: 5vh auto 35px auto;
+}
+
+.calculator {
+  width: 80vw;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#bill {
+  border: 1px dotted var(--accent-color);
+  height: 50px;
+  border-radius: 10px;
+  width: 100%;
+  text-align: center;
+  font-size: 2rem;
+  color: var(--accent-color);
+  margin-bottom: 3px;
+}
+
+#bill::placeholder {
+  color: var(--accent-color);
+  opacity: 40%;
+}
+
+.btn-container {
+  display: flex;
+  margin: 10px 0;
+}
+
+button {
+  background: var(--accent-color);
+  border: none;
+  height: 50px;
+  width: 33.33vw;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.btn-container > button:first-child {
+  border-radius: 7px 0 0 7px;
+}
+
+.btn-container > button:last-child {
+  border-radius: 0 7px 7px 0;
+}
+
+.output {
+  width: 33.33vw;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--accent-color);
+  font-size: 1.5rem;
+  font-weight: 700;
+  border: 1px dotted var(--accent-color);
+}
+
+.results {
+  position: fixed;
+  width: 100vw;
+  bottom: 0;
+  background: var(--accent-color);
+  padding: 5vh;
+  color: #fff;
+  line-height: 150%;
+  font-size: 1.3rem;
+}
+
+.total,
+.per-person {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.total {
+  margin-bottom: 20px;
+}
+
+.light {
+  opacity: 0.8;
+  font-size: 1rem;
+  padding-right: 5px;
+}
+.person-bill {
+  position: relative;
+  font-size: 1.7rem;
+}
+
+.highlight {
+  background-color: #3ed139;
+  padding: 2px 10px;
+  margin-left: -10px;
+  border-radius: 5px;
+  width: fit-content;
+}
+
+.highlight,
+.highlight > * {
+  font-size: 1.5rem;
+}
