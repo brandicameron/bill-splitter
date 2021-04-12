@@ -26,7 +26,12 @@ body {
   margin: 0 auto;
 }
 
+.amount-container {
+  position: relative;
+}
+
 #bill {
+  position: relative;
   border: 1px dotted var(--accent-color);
   height: 70px;
   border-radius: 10px;
@@ -41,6 +46,14 @@ body {
 #bill::placeholder {
   color: var(--accent-color);
   opacity: 40%;
+}
+
+.clear-btn {
+  position: absolute;
+  width: 60px;
+  right: 10px;
+  top: 20%;
+  cursor: pointer;
 }
 
 .btn-container {

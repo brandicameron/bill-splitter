@@ -62,3 +62,8 @@ buttons.forEach((button) => {
 });
 
 bill.addEventListener("input", calculateBill);
+
+document.querySelector(".clear-btn").addEventListener("click", () => {
+  bill.value = "";
+  calculateBill();
+});

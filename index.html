@@ -33,14 +33,17 @@
     </header>
 
     <form class="calculator">
-      <label for="bill" aria-label="Enter Amount of Bill"></label>
-      <input
-        type="number"
-        inputmode="decimal"
-        name="bill"
-        id="bill"
-        placeholder="Bill Amount"
-      />
+      <div class="amount-container">
+        <label for="bill" aria-label="Enter Amount of Bill"></label>
+        <input
+          type="number"
+          inputmode="decimal"
+          name="bill"
+          id="bill"
+          placeholder="Bill Amount"
+        />
+        <img src="./img/clear.svg" alt="clear button" class="clear-btn" />
+      </div>
       <div class="btn-container">
         <button class="tip-decrement">&#8212;</button>
         <div class="output">
