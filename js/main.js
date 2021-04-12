@@ -1,5 +1,5 @@
 let bill = document.getElementById("bill");
-let tipValue = 25;
+let tipValue = 20;
 let personValue = 2;
 
 function tipAmount(e) {
