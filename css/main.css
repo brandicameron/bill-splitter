@@ -50,9 +50,9 @@ body {
 
 .clear-btn {
   position: absolute;
-  width: 60px;
-  right: 10px;
-  top: 20%;
+  width: 50px;
+  right: 15px;
+  top: 25%;
   cursor: pointer;
 }
 
