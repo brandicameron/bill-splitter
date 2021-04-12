@@ -1,10 +1,11 @@
 let bill = document.getElementById("bill");
+let tipOutput = document.querySelector(".tip-output");
+let personOutput = document.querySelector(".person-output");
 let tipValue = 20;
 let personValue = 2;
 
 function tipAmount(e) {
   e.preventDefault();
-  let tipOutput = document.querySelector(".tip-output");
   if (e.target.classList.contains("tip-decrement") && tipValue === 0) {
     tipValue = 0;
     tipOutput.textContent = tipValue;
@@ -19,7 +20,6 @@ function tipAmount(e) {
 
 function personCounter(e) {
   e.preventDefault();
-  let personOutput = document.querySelector(".person-output");
   if (e.target.classList.contains("person-decrement") && personValue === 0) {
     personValue = 0;
     personOutput.textContent = personValue;
@@ -65,5 +65,9 @@ bill.addEventListener("input", calculateBill);
 
 document.querySelector(".clear-btn").addEventListener("click", () => {
   bill.value = "";
+  tipValue = 20;
+  tipOutput.textContent = tipValue;
+  personValue = 2;
+  personOutput.textContent = personValue;
   calculateBill();
 });
