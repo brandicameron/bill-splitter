@@ -28,11 +28,12 @@ body {
 
 #bill {
   border: 1px dotted var(--accent-color);
-  height: 50px;
+  height: 70px;
   border-radius: 10px;
   width: 100%;
   text-align: center;
   font-size: 2rem;
+  font-weight: 700;
   color: var(--accent-color);
   margin-bottom: 3px;
 }
@@ -50,7 +51,7 @@ body {
 button {
   background: var(--accent-color);
   border: none;
-  height: 50px;
+  height: 70px;
   width: 33.33vw;
   color: #fff;
   font-size: 2rem;
@@ -67,14 +68,22 @@ button {
 
 .output {
   width: 33.33vw;
-  height: 50px;
+  height: 70px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   color: var(--accent-color);
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 700;
   border: 1px dotted var(--accent-color);
+}
+
+.label {
+  font-size: 0.8rem;
+  opacity: 50%;
+  font-weight: 400;
+  margin-bottom: 3px;
 }
 
 .results {
@@ -103,10 +112,6 @@ button {
   font-size: 1rem;
   padding-right: 5px;
 }
-.person-bill {
-  position: relative;
-  font-size: 1.7rem;
-}
 
 .highlight {
   background-color: #3ed139;
@@ -118,5 +123,5 @@ button {
 
 .highlight,
 .highlight > * {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
 }
