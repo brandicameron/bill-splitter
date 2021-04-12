@@ -34,7 +34,13 @@
 
     <form class="calculator">
       <label for="bill" aria-label="Enter Amount of Bill"></label>
-      <input type="tel" name="bill" id="bill" placeholder="Bill Amount" />
+      <input
+        type="number"
+        inputmode="decimal"
+        name="bill"
+        id="bill"
+        placeholder="Bill Amount"
+      />
       <div class="btn-container">
         <button class="tip-decrement">&#8212;</button>
         <div class="output"><span class="tip-output">25</span>%</div>
