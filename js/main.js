@@ -20,8 +20,8 @@ function tipAmount(e) {
 
 function personCounter(e) {
   e.preventDefault();
-  if (e.target.classList.contains("person-decrement") && personValue === 0) {
-    personValue = 0;
+  if (e.target.classList.contains("person-decrement") && personValue === 1) {
+    personValue = 1;
     personOutput.textContent = personValue;
   } else if (e.target.classList.contains("person-decrement")) {
     personValue = personValue - 1;
