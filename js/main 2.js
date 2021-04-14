@@ -38,8 +38,6 @@ function calculateBill() {
   let personTip = document.querySelector(".person-tip");
   let personBill = document.querySelector(".person-bill");
   let tipTotal = parseFloat((billAmount * tipValue) / 100);
-
-  // is this where the problem is??
   let billTotal = billAmount + tipTotal;
 
   if (isNaN(billAmount)) {
@@ -50,9 +48,8 @@ function calculateBill() {
   } else {
     totalTip.textContent = tipTotal.toFixed(2);
     totalBill.textContent = billTotal.toFixed(2);
-    personTip.textContent = tipTotal / personValue.toFixed(2);
-    personTip.textContent = parseFloat(tipTotal / personValue).toFixed(2);
-    personBill.textContent = parseFloat(billTotal / personValue).toFixed(2);
+    personTip.textContent = (tipTotal / personValue).toFixed(2);
+    personBill.textContent = (billTotal / personValue).toFixed(2);
   }
 }
 
